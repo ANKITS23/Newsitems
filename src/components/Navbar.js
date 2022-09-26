@@ -46,8 +46,8 @@ export default function NavBar() {
                     </li>
 
                     <li className="text-black dark:text-white hover:text-indigo-200">
-                      <NavLink className="navbar-item" to="/contact">
-                        Contact Us
+                      <NavLink className="navbar-item" to="/News">
+                      News
                       </NavLink>
                     </li>
                     <li className="text-black dark:text-white hover:text-indigo-200">
@@ -55,6 +55,12 @@ export default function NavBar() {
                     Chart
                       </NavLink>
                     </li>
+                    <li className="text-black dark:text-white hover:text-indigo-200">
+                      <NavLink className="navbar-item" to="/list">
+                    List
+                      </NavLink>
+                    </li>
+             
 
 
                     <li className="">
@@ -81,8 +87,8 @@ export default function NavBar() {
                     </li>
 
                     <li className="text-black dark:text-white hover:text-indigo-200">
-                      <NavLink className="navbar-item" to="/contact">
-                        Contact Us
+                      <NavLink className="navbar-item" to="/News">
+                      News
                       </NavLink>
                     </li>
                     <li className="text-black dark:text-white hover:text-indigo-200">
@@ -90,6 +96,12 @@ export default function NavBar() {
                     Chart
                       </NavLink>
                     </li>
+                    <li className="text-black dark:text-white hover:text-indigo-200">
+                      <NavLink className="navbar-item" to="/list">
+                    List
+                      </NavLink>
+                    </li>
+                
 
                     <li className="">
                   <DarkModeToggles />

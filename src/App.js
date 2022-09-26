@@ -4,8 +4,10 @@ import NavBar from "./components/Navbar";
 import Footer from './components/Footer';
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Contact from "./Pages/Contact";
+import News from "./Pages/News";
 import Charts from "./Pages/chart";
+import List from "./Pages/List";
+
 
 const App  = () => {
   return (
@@ -21,17 +23,17 @@ const App  = () => {
 
 function Path() {
 
-
   return (
     <BrowserRouter>
-    <NavBar />
-  <Routes>
-    <Route>
+     <NavBar />
+     <Routes>
+     <Route>
       <Route path="/" element={<Home />} />   
       <Route path="/about" element={<About />} />  
-      <Route path="/contact" element={<Contact />} />  
-   
+      <Route path="/News" element={<News />} />  
       <Route path="/charts" element={<Charts />} />  
+      <Route path="/list" element={<List/>} />  
+
     </Route>
   </Routes>
 </BrowserRouter>

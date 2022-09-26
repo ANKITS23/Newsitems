@@ -10,22 +10,20 @@ export default function About() {
     <div className="main-container">
       <div className="wrapper ">
         <div className=" about-container  ">
-          <Title />
+          <Title title="About Us" value="55" />
           <Quaility />
           <Details />
-          <AboutInfo />
-          <Date/>
-        
+          <AboutInfo />    
         </div>
       </div>
     </div>
   );
 }
 
-const Title = () => {
+const Title = (props) => {
   return (
     <div className="bg-slate-400 text-center my-0 mx-auto py-5">
-      <h3 className="text-5xl uppercase dark:text-blue-500">About Us</h3>
+      <h3 className="text-5xl uppercase dark:text-blue-500">{props.title}{props.value}</h3>
     </div>
   );
 };
@@ -35,7 +33,7 @@ const Quaility = () => {
     <div>
       <div className="md:flex  justify-between gap-5 p-5 ">
         <div className="w-full  md:w-1/2 mb-5 md:mb-0">
-          <img className="w-full block" src="./images/lap.jpg"></img>
+          <img className="w-full block" src="./images/lap.jpg" alt="hbdfxb"/>
         </div>
 
         <div className="w-full flex flex-col justify-between   md:w-1/2">
@@ -64,7 +62,7 @@ const Details = () => {
       <div className="md:flex justify-between w-full gap-2 mb-5">
         <div className="flex justify-between gap-2 w-full md:w-1/2 border-2 p-2 mb-5 md:mb-0" >
           <div className="w-[10%]">
-            <img className="w-full block" src="./images/icon-1.png"></img>
+            <img className="w-full block" src="./images/icon-1.png" alt="hbeb"/>
           </div>
           <div className="w-[90%]">
             <h3 className="m-0 text-gray-600 dark:text-gray-600">Digital Marketing</h3>
@@ -79,7 +77,7 @@ const Details = () => {
         </div>
         <div className="flex justify-between w-full md:w-1/2 gap-2 border-2 p-2 ">
           <div className="w-[10%]">
-            <img className="w-full block" src="./images/icon-2.png"></img>
+            <img className="w-full block" src="./images/icon-2.png" alt="hwxqg"/>
           </div>
           <div className="w-[90%]">
             <h3 className="m-0 text-gray-600 dark:text-gray-600">Creative Design</h3>
@@ -153,20 +151,6 @@ const AboutInfo = () => {
         </div>
       )}
     </div>
-  );
-};
-
-const Date= () => {
-
-   <Example/>
-   
-};
-
-const Example = () => {
-  const [startDate, setStartDate] = useState(new Date());
-  return (
-   
-    <DatePicker/>
   );
 };
 
